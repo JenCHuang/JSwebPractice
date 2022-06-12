@@ -15,6 +15,29 @@
 
   <!-- Custom styles for this template -->
   <link href="carousel.css" rel="stylesheet">
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    .div1 {
+      text-align: center;
+    }
+
+    #showData {
+      text-align: center;
+      font-size: 24px;
+    }
+
+    #dataTable {
+      width: 80%;
+      text-align: center;
+    }
+
+    #cityselect {
+      font-size: 18px;
+    }
+  </style>
 </head>
 
 <body>
@@ -50,67 +73,45 @@
   </header>
 
   <main role="main">
+    <hr class="featurette-divider">
+    <h1>Some AJAX examples practiced in class.</h1>
+    <hr class="featurette-divider">
 
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-      </div><!-- /.row -->
-
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span>
-          </h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
-            alt="Generic placeholder image">
-        </div>
+    <hr class="featurette-divider">
+    <div class="div1">
+      <h2>Get random "Chuck Norris Legend" from Internet:</h2>
+      <br>
+      <div>
+          <span id="showData"></span>
       </div>
+      <br>
+      <button id="button1">Go</button>
+    </div>
 
-      <hr class="featurette-divider">
 
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
-            alt="Generic placeholder image">
-        </div>
+    <hr class="featurette-divider">
+    <div class="div1">
+      <div>
+        <h2>衛福部最近新聞:</h2>
+        <table id="dataTable"></table>
       </div>
+      <br>
+      <button id="button2">Get</button>
+    </div>
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
-            semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
-            commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
-            alt="Generic placeholder image">
-        </div>
+    <hr class="featurette-divider">
+    <div class="div1">
+      <div>
+        <h2>天氣資訊</h2>
+        <h3>請選擇您所在的地區</h3>
+        <br>
+        <select id="citySelect"></select>
       </div>
+      <br>
+      <div id="result"></div>
+    </div>
 
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
-
-    </div><!-- /.container -->
+    <hr class="featurette-divider">
 
     <!-- FOOTER -->
     <footer class="container">
@@ -122,14 +123,15 @@
   <!-- Bootstrap core JavaScript
         ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
   <script src="assets/js/vendor/popper.min.js"></script>
   <script src="dist/js/bootstrap.min.js"></script>
   <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
   <script src="assets/js/vendor/holder.min.js"></script>
+  <script src="something/ajax.js"></script>
 </body>
 
 </html>

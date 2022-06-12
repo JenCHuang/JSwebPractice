@@ -1,0 +1,43 @@
+.hd {
+    text-align: center;
+}
+
+.div1 {
+    text-align: center;
+}
+
+#div_r {
+    margin: 24px auto;
+    width: 70%;
+    height: 500px;
+    background-color: greenyellow;
+    cursor: url(man.png), auto;
+}
+
+#hint{
+    color: red;
+    height: 20px;
+    font-size: 24px;
+}
+
+.div2 {
+    text-align: center;
+    background-color: black;
+    height:360px;
+}
+
+#timer {
+    width: 320px;
+    height:160px;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    font-size: 72px;
+    background-color: darkslateblue;
+}
+
+#p1 {
+    height: 30px;
+    font-size: large;
+}
