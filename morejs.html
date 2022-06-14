@@ -64,11 +64,16 @@
     </div>
 
     <hr class="featurette-divider">
-    <div class="div2">
+    <div class="div1">
       <h1>範例: 密碼鎖炸彈</h1>
+      <p>滑鼠進入黑色區後開始倒數!</p>
+    </div>
+    <div class="div2">
+      <br>
+      <p id="hint">Input a number:  (hint: today)</p>
       <input id="userInput" type="text">
       <button id="getpw">Enter</button>
-      <p id="hint">Input a number:  (hint: today)</p>
+      <br>
       <br>
       <div id="timer"></div>
       <br>
@@ -87,7 +92,14 @@
     <hr class="featurette-divider">
     <div class="div1">
       <h1>範例: 計算多張圖片原始寬度</h1>
+      <br>
       <div>
+        <input id="imageinput1" type="text" placeholder="1st image's url"><br>
+        <input id="imageinput2" type="text" placeholder="2nd image's url"><br>
+        <input id="imageinput3" type="text" placeholder="3rd image's url"><br>
+      </div>
+      <br>
+      <div id="imagediv">
         <img id="image1"><img id="image2"><img id="image3">
       </div>
       <span id="widthResult"></span><br><br>
@@ -115,6 +127,7 @@
   <script src="dist/js/bootstrap.min.js"></script>
   <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
   <script src="assets/js/vendor/holder.min.js"></script>
+  <script src="//unpkg.com/d3"></script>
   <script src="something/morejs.js"></script>
 </body>
 
