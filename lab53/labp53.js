@@ -22,13 +22,7 @@ function main(){
         };
         $("#course").append(
             atr +
-            `<td>${x+1}</td>` + // 陣列從0開始,場次從1開始
-            // `<td>${startDate+7*x}</td>` + // 會有錯誤(型態不同)
-            // `<td>${hostDay}</td>` +
-            //
-            // `<td>${hostDay.toLocaleDateString()}</td>` +
-            // `<td>${hostDay.toLocaleDateString().slice(5)}</td>` +
-            // `<td>${hostDay.toDateString().slice(4,-5)}</td>` +
+            `<td>${x+1}</td>` + 
             `<td>${hostDay.getMonth()+1}月${hostDay.getDate()}日</td>` +
             atd +`${topic[x]}</td>` +
             `</tr>`);

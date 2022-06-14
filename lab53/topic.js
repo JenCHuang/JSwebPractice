@@ -17,9 +17,6 @@ function setMonthAndDay(startMonth,startDay){
     startDate.setSeconds(0);
 };
 
-// setMonthAndDay(2,21); // default
-// setMonthAndDay(4,1);
-
 function changeDate(){
     let d = new Date(start.value);
     setMonthAndDay(d.getMonth()+1,d.getDate());

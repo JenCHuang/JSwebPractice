@@ -41,3 +41,13 @@
     height: 30px;
     font-size: large;
 }
+
+img {
+    width: 30%;
+    height: 200px;
+    border: 1px solid gray;
+}
+
+#buttone2 {
+    font-size: 24px;
+}
