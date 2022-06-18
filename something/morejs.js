@@ -122,14 +122,21 @@ function asyncProcess(imageID, imageURL){
             $(imageID).on('load',function(){
                 resolve(this.naturalWidth);
             });
+            $(imageID).on('error',function(){
+                // reject("Image Source error!");
+                reject(0);
+            });
         }
     );
 };
 
 function gofunc2(){
+    // let a1 = asyncProcess("#image1","https://punchline.asia/wp-content/uploads/2.jpg");
+    // console.log(a1);
+    // debugger;
     Promise.all([
-        // asyncProcess("#image1","https://punchline.asia/wp-content/uploads/2.jpg"),
-        asyncProcess("#image1","https://punchline.asia/wp-content/uploads/2017/09/it-movie-poster-1.jpg"),
+        asyncProcess("#image1","https://punchline.asia/wp-content/uploads/2.jpg"),
+        // asyncProcess("#image1","https://punchline.asia/wp-content/uploads/2017/09/it-movie-poster-1.jpg"),
         asyncProcess("#image2","https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c618cd88432989.5dd5e72e505d1.jpg"),
         asyncProcess("#image3","https://www.u-buy.com.tw/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNzFIQk9PN3RZNUwuX0FDX1NMMTUwMF8uanBn.jpg")
     ])
