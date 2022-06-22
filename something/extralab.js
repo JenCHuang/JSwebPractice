@@ -47,8 +47,7 @@ function asyncProcess(imageID, imageURL){
                 resolve(this.naturalWidth);
             });
             $(imageID).on('error',function(){
-                // reject("Image Source error!");
-                reject(0);
+                reject("Image Source error!");
             });
         }
     );
@@ -81,8 +80,29 @@ function demofunc(){
 };
 
 function gofunc2(){
-    // let a1 = asyncProcess("#image1","https://punchline.asia/wp-content/uploads/2.jpg");
-    // console.log(a1);
-    // debugger;
+    Promise.all([
+        asyncProcess("#image1",$('#imageinput1').val()),
+        asyncProcess("#image2",$('#imageinput2').val()),
+        asyncProcess("#image3",$('#imageinput3').val())
+    ])
+    .then(
+        response => {
+            $("#widthResult").text('圖片寬度: ');
+            var totalWidth = 0;
+            for(let x=0;x<response.length;x++){
+                $("#widthResult").append(response[x]);
+                totalWidth += response[x];
+                if(x<response.length-1){
+                    $("#widthResult").append("px + ");
+                }else{
+                    $("#widthResult").append("px = "+totalWidth+"px");
+                };
+            };
+        },
+        error => {
+            console.log(`Error:${error}`);
+            $("#message").text(`Some of the input urls are failed, please check the urls or change to other image's urls`);
+        }
+    );
 
 };
