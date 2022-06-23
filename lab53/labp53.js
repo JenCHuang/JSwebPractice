@@ -17,7 +17,7 @@ function main(){
             atd = `<td class="td1">`;
         };
         let atr = `<tr class="tr2">`;
-        if (x%2 == 0) {
+        if ((x+dn)%2 == 0) {
             atr =  `<tr class="tr1">`;
         };
         $("#course").append(

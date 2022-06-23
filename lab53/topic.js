@@ -5,7 +5,9 @@ let topic = [
     "隨機性",
     "重複性",
     "條件判斷"
-]
+];
+
+let dn = 0;
 
 let startDate = new Date();
 
@@ -21,5 +23,6 @@ function changeDate(){
     let d = new Date(start.value);
     setMonthAndDay(d.getMonth()+1,d.getDate());
     $("#course").empty();
+    dn++;
     main();
 };
