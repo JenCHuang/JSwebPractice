@@ -7,11 +7,11 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
-    <title>Random Selector</title>
+    <title>Youtube Juke Box</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="lab42/labp42.css">
+    <link rel="stylesheet" href="lab84/labp84.css">
     <!-- Custom styles for this template -->
     <!-- <link href="carousel.css" rel="stylesheet"> -->
 
@@ -20,7 +20,7 @@
 
     <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="#">JenCHuang</a>
+        <a class="navbar-brand" href="../index.html">JenCHuang</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -29,8 +29,8 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home !</a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="lab42s.html">RandomSelector Slot Ver.</a>
+            <li class="nav-item">
+              <a class="nav-link" href="lab42.html">RandomSelector</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="lab53.html">ClubCourse</a>
@@ -41,8 +41,8 @@
             <li class="nav-item">
               <a class="nav-link" href="lab75.html">SmipleRPG</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="lab84.html">YoutubeJukeBox</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">YoutubeJukeBox<span class="sr-only">(current)</span></a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link disabled" href="#">Disabled</a>
@@ -63,21 +63,17 @@
         <br>
         <br>
         <hr class="featurette-divider">
-            <h1>Hi</h1>
-            <input type="button" value="今天晚上吃什麼?">
-            <p>品項</p>
-            <ul id="choices"> <!--避免抓到其他的ul -->
-                <li>拉麵</li>
-                <li>餃子</li>
-                <li>咖哩飯</li>
-                <li>牛丼</li>
-                <li>壽司</li>
-            </ul>
-    
-            <img id="photo" src="" title="" alt="">
+  
+        <h1>YouTube 心情點唱機</h1>
+        <h2></h2>
+        <!--播放歌曲名稱放<h2>這裡-->
+        
+        <div id="player"></div><!-- YouTube Video Player -->
+        <br>
+        <!-- 設一顆按鈕 -->
+        <input id="playButton" type="button" value="Play">
 
         <hr class="featurette-divider">
-        <p><a href="lab42s.html">試試另一種版本!?</a></p>
         <hr class="featurette-divider">
 
         <!-- /END THE FEATURETTES -->
@@ -102,6 +98,9 @@
     <script src="dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="assets/js/vendor/holder.min.js"></script>
-    <script src="lab42/labp42.js" async defer></script>
+    <!-- 引入youtube API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="lab84/playList.js"></script>
+    <script src="lab84/labp84.js"></script>
   </body>
 </html>
