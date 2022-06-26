@@ -7,3 +7,22 @@
     stroke-width: 0.5;
     stroke-dasharray: 4,2;
 }
+
+.tooltip1 {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    /*避免出現連結或其他預設行為*/
+    /* background: white; */
+    background: rgba(red, green, blue, 1);
+    max-width: 200px;
+}
+
+.tooltip2 {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    /*避免出現連結或其他預設行為*/
+    background: rgba(red, green, blue, 1);
+    max-width: 200px;
+}
