@@ -166,7 +166,7 @@ function setupCanvas1(data) {
     //畫 Y axis
     const yAxis = d3.axisLeft(yScale)
                 .ticks(5).tickFormat(formatTicks)
-                .tickSizeInner(-chart_height)
+                .tickSizeInner(-chart_width+40)
                 .tickSizeOuter(0);
     this_svg.append('g')
                 .attr('class','y axis')
@@ -207,6 +207,5 @@ d3.csv('jsd3/movies.csv', type).then(
         const moviesClean = filterData(movies);
         const lineChartData = prepareLineChartData(moviesClean);
         setupCanvas1(lineChartData);
-        setupCanvas2(lineChartData);
     }
 );

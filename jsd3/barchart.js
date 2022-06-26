@@ -242,7 +242,6 @@ function setupCanvas2(data, moviesClean) {
     update(data);
 
 
-    // NEW in lab51
     //interactive 互動處理
     const tip = d3.select('.tooltip');
     function mouseover(e){
