@@ -1,0 +1,33 @@
+#basiccontainer{
+    text-align: center;
+    border-color: whitesmoke;
+}
+
+.hh3 {
+    font-weight: 500;
+    color: #555;
+    margin: 0.4rem 0;
+}
+
+svg {
+    border: 2px solid #ccc;
+}
+
+.buttonp {
+    outline: none;
+    color: black;
+    border-color: black;
+    background: rgb(164, 164, 164);
+    padding: 3px 0px;
+    width: 60px;
+    text-align: center;
+    transition: all 400ms;
+}
+
+.buttonp:hover {
+    background: yellow;
+}
+
+.buttonp:focus {
+    background: pink;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Bar-Chart Figure</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="jsd3/barchart.css">
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper-->
+	<div id="wrapper">
+
+		<!-- Nav -->
+		<nav id="nav">
+			<a href="#basic" class="icon solid fa-folder"><span>Bar-Chart</span></a>
+			<a href="#interactive" class="icon solid fa-folder"><span>Interactive</span></a>
+			<a href="index.html#d3work" class="icon fa-folder"><span>D3.js Main</span></a>
+			<a href="index.html" class="icon solid fa-home"><span>Home</span></a>
+			<a href="jsweb/index.html" class="icon fa-folder"><span>JS Main</span></a>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+
+			<!-- Figure -->
+			<article id="basic" class="panel">
+				<header>
+					<h2>Bar-Chart Figure</h2>
+					<h4>&emsp;Movie's data</h4>
+				</header>
+				<div class="bar-chart-container1"></div>
+			</article>
+
+			<!-- Interactive Figure -->
+			<article id="interactive" class="panel">
+				<header>
+					<h2>Bar-Chart Figure: Interactive</h2>
+					<h4>&emsp;Movie's data</h4>
+				</header>
+				<div class="bar-chart-container2"></div>
+				<div class="controls">
+					<button data-name="revenue">Revenue</button>
+					<button data-name="budget">Budget</button>
+					<button data-name="popularity">Popularity</button>
+				</div>
+				<div class="tooltip">
+					<div class="tip-header">
+						<h3 class="hh3"></h3>
+						<h4></h4>
+					</div>
+					<div class="tip-body"></div>
+				</div>
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<div id="footer">
+			<ul class="copyright">
+				<li>&copy; Untitled.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="//unpkg.com/d3"></script>
+	<script src="jsd3/barchart.js"></script>
+
+</body>
+
+</html>
